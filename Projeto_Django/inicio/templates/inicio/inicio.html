@@ -1,0 +1,69 @@
+{%load static%}
+
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SISTEMA DE FUNCIONÁRIOS</title>
+    <link rel="icon" type="image/x-icon" href="https://static-00.iconduck.com/assets.00/bosch-icon-2048x2048-se8sykum.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
+    crossorigin="anonymous">  
+    <link rel="stylesheet" href="{% static 'styles/style.css' %}">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand"> 
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Bosch-logo.svg/2560px-Bosch-logo.svg.png" height="28" width="120" margin=10>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon" ></span>
+                </button> 
+            </a>
+            <div class="container-fluid" id="navbarNav">
+                <ul class="navbar-nav">
+                    <a class="nav-link" href="{% url 'inicio' %}">Início</a>
+                    <a class="nav-link" href="{% url 'lista_clientes' %}">Clientes
+                    <a class="nav-link" href="{% url 'lista_funcionarios' %}">Funcionários</a>
+                    <a class="nav-link" href="{% url 'lista_produtos' %}">Produtos</a>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="caixa_principal"> 
+        <div class="caixas"> 
+            <p class="content"> MISSÃO</p>
+            <p class="missoes">-Orientação para o futuro e foco nos resultados;</p>
+            <p class="missoes">-Responsabilidade e sustentabilidade; </p>
+            <p class="missoes">-Iniciativa e determinação; </p>
+            <p class="missoes">-Abertura e Confiança; </p>
+            <p class="missoes">-Justiça; </p>
+            <p class="missoes">-Confiabilidade, credibilidade, legalidade; </p>
+            <p class="missoes">-Diversidade; </p>
+        </div>
+        <div class="caixas"> 
+            <p class="content"> VISÃO</p>
+        </div>
+        <div class="caixas"> 
+            <p class="content"> VALORES</p>
+        </div>
+    </div>
+
+    <span class="ROBERT_BOSCH">
+        <img src = "https://assets.bosch.com/media/global/bosch_group/our_history/robert-bosch-etching-hermann-kaetelhoen_res_300x400.webp" width=300px height=400px>
+        <h3 class="text">"A longo prazo, uma abordagem honesta e justa ao fazer negócios será sempre mais rentável."</h3>
+        <span class="text2"><p>ROBERT BOSCH, 1921</p></span>
+    </span>
+
+</body>
+<footer class="mt-4">
+        <!-- Rodapé do site -->
+        <div class="text-center">
+            © 2024 PROJETO CRUD COM DJANGO - DTA BOSCH. Todos os direitos reservados.
+        </div>
+</footer>
+</body>
+</html>
