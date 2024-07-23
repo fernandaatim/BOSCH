@@ -1,0 +1,62 @@
+*{
+    font-family: boschsans, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+.navbar-brand{
+    padding-left: 5vh;
+}
+
+.caixa_principal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:1000px;
+}
+
+.caixas{
+    background-color: rgb(212, 212, 212);
+    margin: 30px;
+    width: 500px;
+    height:800px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.ROBERT_BOSCH{
+    display: flex;
+    position: relative;
+    left: 15vh;
+}
+
+.text{
+    font-size: 50px;
+    position: relative;
+    width: 900px;
+    height:200px;
+    top: 20vh;
+}
+
+.text2{
+    color: black;
+    position: relative;
+    top: 40vh;
+}
+
+.mt-4{
+    padding-top: 10vh;
+}
+
+.content{
+    padding-top: 5vh;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.missoes{
+    padding-left: 5vh;
+    padding-top: 1vh;
+    font-weight: 500;
+    font-size: 20px;
+    text-align: justify;
+}
+
